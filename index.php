@@ -6,7 +6,9 @@
     <title>Boom Boom</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
+    <!-- modification -->
     <div id="logo">
         <img src="./assets/img/heart-7686125_1280.png" alt="">
     </div>
