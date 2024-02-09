@@ -20,11 +20,10 @@ if (isset($_POST["submited"])) {
         //password_verify($password, $passwordVerif) return boolean
         $passwordVerif = $results['password']; //mot de passe hashé qui vient de ma bdd
         if (password_verify($password, $passwordVerif)) {
-        header("Location: match.php?email=$email");
-    }else{
-        $error = "password incorrects...";
-    }
-        
+            header("Location: match.php?email=$email");
+        } else {
+            $error = "password incorrects...";
+        }
     } else {
         $error = "Identifiants incorrects...";
     }
@@ -43,6 +42,9 @@ if (isset($_POST["submited"])) {
 </head>
 
 <body>
+    <header>
+        <?php include("./inc/menu.php"); ?>
+    </header>
     Bien le bonjour!!!
     <?php
     /* Ici je déclare une variable avec le signe $ attaché */
